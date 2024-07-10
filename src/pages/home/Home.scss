@@ -1,0 +1,30 @@
+.home {
+    display: flex;
+  
+    .left-side {
+      flex: 0 0 35%;
+      padding: 1rem;
+      max-width: 35%;
+    }
+  
+    .right-side {
+      flex: 0 0 65%;
+      padding: 1rem;
+      max-width: 65%;
+    }
+  
+  }
+  @media (max-width: 768px) {
+    .home{
+        display: block;
+    
+    .right-side ,
+    .left-side {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 1rem;
+    }
+}
+  }
+
+  

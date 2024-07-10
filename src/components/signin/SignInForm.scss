@@ -1,0 +1,106 @@
+$base-color: #ff00a3;
+$base-background-color: #2d313c;
+.trial-session-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#081027;
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+  
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  
+      input {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: $base-background-color;
+        color: #fff;
+        height: 40px;
+        font-size: 20px;
+      }
+  
+      .mobile-input {
+        display: flex;
+  
+        select {
+          margin-right: 0.5rem;
+          padding: 0.5rem;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          background-color: $base-background-color;
+          color: #fff;
+          height: 58px;
+          font-size: 20px;
+        }
+  
+        input {
+          flex: 1;
+        }
+      }
+  
+      button {
+        padding: 0.5rem;
+        border-radius: 40px;
+        border: none;
+        background-color: #2d313c;
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+        height: 50px;
+        margin-top: 20px;
+      }
+      @media (max-width: 768px) {
+        input {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: $base-background-color;
+            color: #fff;
+            height: 40px;
+            font-size: 20px;
+            width: 92%;
+          }
+      }
+    }
+  
+    .login-link {
+      margin-top: 1rem;
+      a {
+        color: $base-color;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .terms {
+      margin-top: 1rem;
+      font-size: 0.7rem;
+  
+      a {
+        color: $base-color;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
